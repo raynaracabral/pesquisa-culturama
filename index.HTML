@@ -43,7 +43,7 @@
         <label for="female">Feminino</label>
         <input type="radio" name="userGender" value="Outro" id="other">
         <label for="other">Outro</label>
-        <br>
+<br>                                                                                
 
          <label for="maritalStatus">Estado Civil</label>
           <select name="maritalStatus" id="maritalStatus">
@@ -54,7 +54,7 @@
           </select>
 <br>
           <label for="userState">Estado</label>
-          <select name="userState" id="userState">
+          <select name="userState" id="userState" required>
               <option value="AC">AC</option>
               <option value="AL">AL</option>
               <option value="AP">AP</option>
@@ -83,9 +83,9 @@
               <option value="SE">SE</option>
               <option value="TO">TO</option>
 
-            <br>
-              <label for="userCity">Cidade:</label>
-              <input type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza" />
+<br>            
+            
+              <input type="text" name="userCity" placeholder="Cidade">
 
 
           </select>
