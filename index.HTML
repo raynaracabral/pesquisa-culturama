@@ -11,27 +11,27 @@
     </header>
 <section>
 <form action="" method="get">
- <!--  <fieldset>
+  <fieldset>
     
         <legend>Dados Pessoais</legend>
 
-            <label for="userName">Nome</label>
-            <input type="text" name="userName" required>
+            <label for="userName" >Nome</label>
+            <input type="text" name="userName" id="userName" required>
         <br>
-            <label for="userAge">Idade</label>
-            <input type="number" name="userAge" min = 12 max = 100 required>
+            <label for="userAge" >Idade</label>
+            <input type="number" name="userAge" id="userAge" min = 12 max = 100 required>
         <br>
             <label for="birthdate">Data de Nascimento</label>
-            <input type="date" name="birthdate">
+            <input type="date" name="birthdate" id="birthdate" required>
         <br>
             <label for="userEmail">Email</label>
-            <input type="email" name="userEmail" required>
+            <input type="email" name="userEmail" id="userEmail" required>
         <br>
             <label for="userNumberPhone">Telefone</label>
-            <input type="tel" name="userNumberPhone" pattern="[0-9]{11}" placeholder="DDD = número sem espaço ou hífen">
+            <input type="tel" name="userNumberPhone" id="userNumberPhone" pattern="[0-9]{11}" placeholder="DDD = número sem espaço ou hífen">
         <br>
             <label for="userImage">Upload de foto</label>
-            <input type="file" name="userImage" accept="image/*">
+            <input type="file" name="userImage" id="userImage" accept="image/*">
     </fieldset>
 
     <fieldset>
@@ -46,8 +46,9 @@
 <br>                                                                                
 
          <label for="maritalStatus">Estado Civil</label>
-          <select name="maritalStatus" id="maritalStatus">
-           <option value="Solteiro">Solteiro</option>
+         <select name="maritalStatus" id="maritalStatus" required>
+           <option value="" disabled selected>Selecionar</option> 
+            <option value="Solteiro">Solteiro</option>
            <option value="Casado">Casado</option>
            <option value="Divorciado">Divorciado</option>
            <option value="Viúvo">Viúvo</option>
@@ -55,6 +56,7 @@
 <br>
           <label for="userState">Estado</label>
           <select name="userState" id="userState" required>
+              <option value="" disabled selected>Selecionar</option>
               <option value="AC">AC</option>
               <option value="AL">AL</option>
               <option value="AP">AP</option>
@@ -82,28 +84,29 @@
               <option value="SP">SP</option>
               <option value="SE">SE</option>
               <option value="TO">TO</option>
+           
+         </select>
 
-<br>            
-            
-              <input type="text" name="userCity" placeholder="Cidade">
+             <label for="userCity">Cidade</label>
+              <input type="text" name="userCity" id="userCity" placeholder="Ex: São Paulo" required>
 
 
-          </select>
-    </fieldset>--> 
+         
+    </fieldset>
 
 <fieldset>
     <legend>Hábitos</legend>
     <p>Redes Sociais:</p>
-    <input type="checkbox" name="socialMedia" value="facebook">
+    <input type="checkbox" name="socialMedia" value="facebook" id="facebook" >
     <label for="facebook">Facebook</label>
     <br>
-    <input type="checkbox" name="socialMedia" value="instagram" >
+    <input type="checkbox" name="socialMedia" value="instagram" id="instagram">
     <label for="instagram">Instagram</label>
     <br>
-    <input type="checkbox" name="socialMedia" value="x" >
+    <input type="checkbox" name="socialMedia" value="x" id="twitter">
     <label for="twitter">X</label>
     <br>
-    <input type="checkbox" name="socialMedia" value="linkedin" >
+    <input type="checkbox" name="socialMedia" value="linkedin" id="linkedin">
     <label for="linkedin">LinkedIn</label>
 
 
