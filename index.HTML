@@ -46,7 +46,7 @@
 <br>                                                                                
 
          <label for="maritalStatus">Estado Civil</label>
-         <select name="maritalStatus" id="maritalStatus" required>
+         <select name="maritalStatus" id="maritalStatus">
            <option value="" disabled selected>Selecionar</option> 
             <option value="Solteiro">Solteiro</option>
            <option value="Casado">Casado</option>
@@ -88,7 +88,7 @@
          </select>
 
              <label for="userCity">Cidade</label>
-              <input type="text" name="userCity" id="userCity" placeholder="Ex: São Paulo" required>
+              <input type="text" name="userCity" id="userCity" placeholder="Ex: São Paulo">
 
 
          
@@ -126,6 +126,30 @@
 
 
 </fieldset>
+
+<fieldset>
+
+    <legend>Opinião</legend>
+    
+    <p>Nível de satisfação:</p>
+    <input type="radio" name="userOpinion" value="otimo" id="excellent">
+    <label for="excellent">Òtimo</label>
+    <input type="radio" name="userOpinion" value="Bom" id="good">
+    <label for="good">Bom</label>
+    <input type="radio" name="userOpinion" value="Regular" id="regular">
+    <label for="regular">Regular</label>
+    <input type="radio" name="userOpinion" value="Ruim" id="bad">
+    <label for="bad">Ruim</label>
+
+    <br>
+
+    <label for="opinion">Comentário:</label>
+    <textarea id="opinion" name="userOpinion" placeholder="Digite sua opinião aqui..."></textarea>
+
+
+
+</fieldset>
+
     
     <button type="submit">Enviar</button>
 
