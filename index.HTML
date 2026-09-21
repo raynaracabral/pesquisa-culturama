@@ -131,17 +131,21 @@
 
     <legend>Opinião</legend>
     
-    <p>Nível de satisfação:</p>
+    <p>O que você achou da qualidade do nosso serviço?</p>
+
     <input type="radio" name="userOpinion" value="otimo" id="excellent">
     <label for="excellent">Òtimo</label>
+
     <input type="radio" name="userOpinion" value="Bom" id="good">
     <label for="good">Bom</label>
+
     <input type="radio" name="userOpinion" value="Regular" id="regular">
     <label for="regular">Regular</label>
-    <input type="radio" name="userOpinion" value="Ruim" id="bad">
-    <label for="bad">Ruim</label>
 
-    <br>
+    <input type="radio" name="userOpinion" value="Ruim" id="bad">
+    <label for="bad">Ruim</label><br>
+
+    
 
     <label for="opinion">Comentário:</label>
     <textarea id="opinion" name="userOpinion" placeholder="Digite sua opinião aqui..."></textarea>
@@ -150,8 +154,20 @@
 
 </fieldset>
 
-    
+<fieldset>
+    <legend>Confirmações</legend>
+
+    <input type="checkbox" name="userLgpd" value="confirm" id="userLgpdTerm" required>
+    <label for="userLgpdTerm">Eu aceito participar da pesquisa.</label><br>
+
+    <input type="checkbox" name="userGetResult" value="confirm" id="getResult" required>
+    <label for="getResult">Desejo receber email com os resultados.</label>
+
+
+</fieldset>
+
     <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
 
 </form>
 
