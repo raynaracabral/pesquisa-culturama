@@ -81,3 +81,30 @@ input[type="color"]{
     width: 50px;
     padding: 0% 5px;
 }
+
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green; 
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: orangered; 
+  color: white;
+}
