@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="culturama-favico.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+
     <title>Pesquisa Culturama</title>
 </head>
-<body>
-    <header>
+    <body>
+        <main>
+    
+        <header>
+        <img src="img/logo-culturama.png" alt="Logo Culturama">
         <h1>Pesquisa Online</h1>
     </header>
 <section>
-<form action="" method="get">
+<form action="sucesso.html" method="get">
 
  <fieldset>
 
@@ -58,31 +67,7 @@
            <option value="Viúvo">Viúvo</option>
          
         </select>
-        
-         <section>           
-           
-             <label for="userCity">Cidade</label>
-              <input type="text" name="userCity" placeholder="Ex: São Paulo">
-              
-          </section>
-    </fieldset> 
-
-<fieldset>
-    <legend>Hábitos</legend>
-    <p>Redes Sociais:</p>
-    <input type="checkbox" name="socialMedia" value="facebook" id="facebook" >
-    <label for="facebook">Facebook</label>
-    <br>
-    <input type="checkbox" name="socialMedia" value="instagram" id="instagram">
-    <label for="instagram">Instagram</label>
-    <br>
-    <input type="checkbox" name="socialMedia" value="x" id="twitter">
-    <label for="twitter">X</label>
-    <br>
-    <input type="checkbox" name="socialMedia" value="linkedin" id="linkedin">
-    <label for="linkedin">LinkedIn</label>
-
-    <section>
+        <section>
         <label for="userState">Estado</label>
         <select name="userState" id="userState">
               <option value="not" disabled selected>Selecionar</option>
@@ -115,7 +100,6 @@
               <option value="TO">TO</option><br>
            
         </select>
-        
          <section>           
            
              <label for="userCity">Cidade</label>
@@ -123,6 +107,7 @@
               
           </section>
     </fieldset> 
+
 
 <fieldset>
     <legend>Hábitos</legend>
@@ -200,9 +185,8 @@
 
 </form>
 
-
-
-
 </section>
-</body>
+    
+        </main>
+    </body>
 </html>
