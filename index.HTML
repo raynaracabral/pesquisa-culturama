@@ -39,10 +39,11 @@
     
         <label for="userNumberPhone">Telefone</label>
         <input type="tel" name="userNumberPhone" pattern="[0-9]{11}" placeholder="DDD + número sem espaço ou hífen" aria-describedby="phoneHelp">
-        <small>Preencha com 11 dígitos no formato: DDD + número sem espaços ou hífen.</small><br>
+        <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + número sem espaços ou hífen.</small><br>
     
         <label for="userImage">Upload de foto</label>
-        <input type="file" name="userImage" accept="image/*">
+        <input type="file" name="userImage" accept="image/*" aria-describedby="imageHelp">
+        <small id="imageHelp">Escolha uma imagem no formato JPG ou PNG.</small>
     
     </fieldset>
 
