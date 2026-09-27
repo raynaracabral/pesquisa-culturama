@@ -58,9 +58,20 @@ label {
 
 }
 
+input[type="tel"],
+input[type="file"] {
+    margin-bottom: 0;
+
+}
+
+small {
+    display: block;
+    margin-bottom: 10px;
+}
+
 input, select, textarea {
     width: 100%;
-    padding: 0px;
+    padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
