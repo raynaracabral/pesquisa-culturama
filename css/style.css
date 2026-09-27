@@ -5,9 +5,20 @@
 
 }
 
+:root {
+  --cor-texto: #333333;
+  --cor-fundo: #ffffff;
+}
+
+.theme-high-contrast {
+  --cor-texto: #000000;
+  --cor-fundo: #ffffff;
+}
+
 body {
     font-family: 'Work Sans', sans-serif;
-    background-color: #f9f9f973;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 
 }
 
@@ -27,9 +38,18 @@ img {
     height: 100px;
 }
 
+html {
+  font-size: 100%;
+}
+
 h1 {
     font-family: "Fjalla One", sans-serif;
+    font-size: 2rem; 
     text-align: center;
+}
+
+p {
+  font-size: 1rem;
 }
 
 form {
